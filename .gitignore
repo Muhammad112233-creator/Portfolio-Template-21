@@ -1,0 +1,25 @@
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python (asset tooling)
+__pycache__/
+*.pyc
+.venv/
+
+# Node (only if you add build tooling later)
+node_modules/
+npm-debug.log*
+
+# Logs & temp
+*.log
+tmp/
+.cache/
