@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — The File Was Eaten by a Black Hole | Alex Marlowe</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/main.css">
+<style>
+  .nf-wrap{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.1rem;text-align:center;padding:2rem}
+  .nf-hole{width:170px;height:170px;border-radius:50%;position:relative;
+    background:radial-gradient(circle,#000 34%,rgba(0,229,255,.28) 40%,rgba(238,155,0,.22) 48%,transparent 62%);
+    animation:voidPulse 2.2s ease-in-out infinite}
+  .nf-hole::before,.nf-hole::after{content:"";position:absolute;inset:-18px;border-radius:50%;border:1px dashed rgba(0,229,255,.45);animation:voidSpin 5s linear infinite}
+  .nf-hole::after{inset:-36px;border-color:rgba(238,155,0,.3);animation-duration:9s;animation-direction:reverse}
+  .nf-title{font-family:var(--mono);font-size:clamp(.95rem,3.4vw,1.35rem);letter-spacing:.18em;color:var(--amber);animation:voidFlicker 1.6s steps(2) infinite}
+  .nf-sub{font-family:var(--mono);font-size:.78rem;letter-spacing:.26em;color:var(--cyan)}
+  .nf-robot{font-family:var(--mono);font-size:.72rem;line-height:1.6;color:var(--ink-dim);white-space:pre;border:1px dashed var(--line);padding:1rem 1.2rem;margin-top:.6rem}
+  .nf-note{font-size:.86rem;color:var(--ink-dim);max-width:44ch}
+  .nf-actions{display:flex;gap:1rem;margin-top:1rem;flex-wrap:wrap;justify-content:center}
+</style>
+</head>
+<body>
+<div id="crt" aria-hidden="true"></div>
+<main class="nf-wrap">
+  <div class="nf-hole" aria-hidden="true"></div>
+  <h1 class="nf-title">THE FILE WAS EATEN BY A BLACK HOLE</h1>
+  <p class="nf-sub">· SIGNAL LOST · ERR 404 · SYSTEM DOWN ·</p>
+  <pre class="nf-robot" aria-hidden="true">  [o_o]
+  <| |&gt;   robot.unit_07 — searching sector 404...
+  /  \   status: still nothing. coffee requested.</pre>
+  <p class="nf-note">A robot is working to fix the error. The page you asked for either moved, never existed, or is currently orbiting a singularity.</p>
+  <div class="nf-actions">
+    <a class="btn-key btn-accent" href="./">[·Retry·]</a>
+    <a class="btn-key" href="./#work">[·see·my·work·]</a>
+  </div>
+</main>
+<script>if(!sessionStorage.getItem("am-booted")){document.body.classList.add("is-ready")}document.body.classList.add("is-ready");</script>
+</body>
+</html>

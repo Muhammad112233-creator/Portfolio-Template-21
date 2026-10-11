@@ -1,0 +1,23 @@
+# Alex Marlowe — Creative Developer & Designer
+
+> Portfolio of Alex Marlowe, creative developer & designer based in Oslo, Norway.
+> The site is a single-page experience: boot preloader, glitch hero, about + certificates,
+> art-direction project archive, photography archive with polaroids, a 12-face holo-cube
+> illustration gallery and a terminal-style contact form.
+
+## Sections
+- Hero: identity, availability, navigation hints
+- About: bio, availability, certificates gallery (9 items)
+- Work: identity / editorial / web project tables with previews
+- Photography: 52 frames across landscapes, street, animals, travel + 10 polaroids
+- Illustration: contact sheet + holo-cube gallery (12 works)
+- Contact: demo-mode form, direct mail link
+
+## Tech
+Hand-written HTML/CSS/JS, GSAP + ScrambleTextPlugin, Splitting.js, ScrollOut.
+All imagery is procedurally generated from tools/generate_assets.py — no stock photos.
+Bilingual EN/ES, custom cursor, WebAudio UI sounds, no tracking.
+
+## Links
+- Home: https://alexmarlowe.dev/
+- Email: hello@alexmarlowe.dev

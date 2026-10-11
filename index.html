@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Marlowe | Creative Developer &amp; Designer — Oslo</title>
+<meta name="description" content="Portfolio of Alex Marlowe — creative developer & designer based in Oslo, Norway. Web experiences, brand identity, photography and illustration.">
+<meta name="author" content="Alex Marlowe">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://alexmarlowe.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alex Marlowe | Creative Developer & Designer">
+<meta property="og:description" content="Web experiences, brand identity, photography and illustration from Oslo to the world.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<meta property="og:url" content="https://alexmarlowe.dev/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/funnel-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alex Marlowe",
+  "jobTitle": "Creative Developer & Designer",
+  "email": "mailto:hello@alexmarlowe.dev",
+  "address": { "@type": "PostalAddress", "addressLocality": "Oslo", "addressCountry": "NO" },
+  "url": "https://alexmarlowe.dev/"
+}
+</script>
+</head>
+<body data-sound="off">
+<a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
+
+<!-- ============================== CRT OVERLAYS ============================== -->
+<div id="crt" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true">
+  <div class="cursor-ring"><span class="cursor-label"></span></div>
+  <div class="cursor-dot"></div>
+</div>
+
+<!-- ============================== PRELOADER ============================== -->
+<div id="boot" role="status" aria-label="Loading portfolio">
+  <div class="boot-scan" aria-hidden="true"></div>
+  <div class="boot-frame">
+    <div class="boot-head">
+      <span>MARLOWE_OS · BOOT_SEQUENCE</span>
+      <span class="boot-ver">v3.2.1</span>
+    </div>
+    <ul class="boot-log" id="boot-log"></ul>
+    <div class="boot-bar"><i id="boot-fill"></i></div>
+    <div class="boot-meta">
+      <span id="boot-pct">000%</span>
+      <span id="boot-status" data-i18n="boot.loading">LOADING MODULES</span>
+    </div>
+  </div>
+  <button id="boot-skip" class="btn-key btn-ghost" type="button" data-i18n="boot.skip">[·skip·]</button>
+</div>
+
+<!-- ============================== TOP BAR ============================== -->
+<header id="topbar">
+  <a class="brand" href="#hero" data-cursor="home">
+    <span class="brand-glyph" aria-hidden="true">◣A·M◢</span>
+    <span class="brand-text" data-scramble-hover>A·MARLOWE</span>
+  </a>
+  <nav class="topnav" id="topnav" aria-label="Sections">
+    <a href="#about"        data-scramble-hover data-i18n="nav.about">ABOUT</a>
+    <a href="#work"         data-scramble-hover data-i18n="nav.work">WORK</a>
+    <a href="#photo"        data-scramble-hover data-i18n="nav.photo">PHOTO</a>
+    <a href="#illo"         data-scramble-hover data-i18n="nav.illo">ILLUSTRATION</a>
+    <a href="#contact"      data-scramble-hover data-i18n="nav.contact">CONTACT</a>
+  </nav>
+  <div class="top-actions">
+    <button id="sound-toggle" class="btn-mini" type="button" aria-pressed="false">
+      <span class="dot" aria-hidden="true"></span><span data-i18n="top.sound">SOUND</span>:<span id="sound-state">OFF</span>
+    </button>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button class="lang-btn is-active" type="button" data-lang="en">EN</button><span class="lang-sep">|</span><button class="lang-btn" type="button" data-lang="es">ES</button>
+    </div>
+    <button id="menu-toggle" class="btn-mini" type="button" aria-expanded="false" aria-controls="topnav">≡</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================== HERO ============================== -->
+<section id="hero" aria-label="Intro">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-kicker"><span class="blink-dot" aria-hidden="true"></span>[<span data-i18n="hero.kicker">·SYSTEM ONLINE · PORTFOLIO TRANSMISSION ·</span>]</p>
+    <h1 class="hero-title">
+      <span class="hero-name" id="hero-name" data-scramble-in>·Alex Marlowe·</span>
+      <span class="hero-role glitch-stack" id="hero-role" data-text="CREATIVE DEVELOPER &amp; DESIGNER" data-i18n-scramble="hero.role">
+        <span data-scramble-in>CREATIVE DEVELOPER &amp; DESIGNER</span>
+      </span>
+    </h1>
+    <div class="hero-cta">
+      <a class="btn-key btn-accent pulse-dot" href="#contact" data-i18n="hero.cta1">[·OpenToWork·]</a>
+      <a class="btn-key" href="#work" data-i18n="hero.cta2">[·see·my·work·]</a>
+    </div>
+    <div class="hero-meta">
+      <span class="chip" id="hero-date">[·0000·00·00·]</span>
+      <span class="chip chip-dim">[·OSLO · 59.91°N 10.75°E·]</span>
+      <div class="hero-socials">
+        <a href="https://github.com/alexmarlowe" target="_blank" rel="noopener" aria-label="Alex Marlowe on GitHub" data-cursor="link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C16.3 4.7 17.3 5 17.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.6 18.4.5 12 .5z"/></svg>
+        </a>
+        <a href="https://dribbble.com/alexmarlowe" target="_blank" rel="noopener" aria-label="Alex Marlowe on Dribbble" data-cursor="link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm7.9 5.6c1.4 1.7 2.3 3.9 2.3 6.3-.4-.1-3.9-.8-7.5-.3-.1-.2-.2-.4-.3-.7-.3-.7-.6-1.3-1-1.9 4-1.6 5.8-3 6.5-3.4zM12 1.9c2.7 0 5.1 1.1 6.9 2.8-.6.4-2.3 1.7-6.1 3.1-1.9-3.5-4-6.4-4.3-6.8 1.1-.4 2.3-.7 3.5-.7zM6.6 3.4c.3.4 2.4 3.3 4.2 6.7-5.3 1.4-9.9 1.4-10.4 1.4.7-3.7 3.1-6.8 6.2-8.1zM1.9 12v-.3c.5 0 5.6.1 11.2-1.5.3.6.6 1.2.9 1.8l-.4.1c-5.6 1.8-8.6 6.7-8.9 7.1A10 10 0 0 1 1.9 12zm10.1 10.1c-2.4 0-4.7-.8-6.5-2.2.2-.4 2.4-4.7 8.4-6.7l.1-.1c1.5 3.9 2.1 7.1 2.3 8.1-1.3.6-2.8.9-4.3.9zm6-1.9c-.1-.9-.7-3.8-2-7.5 3.4-.5 6.4.3 6.8.4-.5 2.9-2.3 5.4-4.8 7.1z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/alexmarlowe" target="_blank" rel="noopener" aria-label="Alex Marlowe on LinkedIn" data-cursor="link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21H9z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <aside class="howto" id="howto" aria-label="How to navigate">
+      <div class="howto-head" data-i18n="hero.howto">[ · HOW TO NAVIGATE · ]</div>
+      <ol class="howto-list">
+        <li><b>·01·</b><span data-i18n="hero.howto1">TOP MENU</span><small data-i18n="hero.howto1b">jump to any section</small></li>
+        <li><b>·02·</b><span data-i18n="hero.howto2">SCROLL</span><small data-i18n="hero.howto2b">explore in sequence</small></li>
+        <li><b>·03·</b><span data-i18n="hero.howto3">see my work →</span><small data-i18n="hero.howto3b">curated entry point</small></li>
+        <li><b>·04·</b><span data-i18n="hero.howto4">SOUND</span><small data-i18n="hero.howto4b">mute / unmute top right</small></li>
+        <li><b>·05·</b><span data-i18n="hero.howto5">LANGUAGE</span><small data-i18n="hero.howto5b">switch EN / ES top right</small></li>
+      </ol>
+      <div class="howto-foot" data-i18n="hero.howtoFoot">choose your path ·</div>
+    </aside>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span data-i18n="hero.scroll">[ · Scroll to explore · ]</span>
+    <span class="chev-seq"><i></i><i></i><i></i></span>
+  </div>
+
+  <div class="ticker ticker-mobile" aria-hidden="true"><div class="ticker-track" id="ticker-mobile">
+    <span>· More to Explore on Desktop&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+  </div></div>
+  <div class="ticker ticker-desktop" aria-hidden="true"><div class="ticker-track" id="ticker-desktop">
+    <span>Creative Developer · Digital Designer · Oslo&nbsp;&nbsp;✦&nbsp;&nbsp;Open to Work · Available for Freelance&nbsp;&nbsp;✦&nbsp;&nbsp;Let's Build Something · hello@alexmarlowe.dev&nbsp;&nbsp;✦&nbsp;&nbsp;Web · Motion · 3D · Editorial · Photography&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+  </div></div>
+</section>
+
+<!-- ============================== ABOUT ============================== -->
+<section id="about" aria-label="About">
+  <div class="sec-head">
+    <span class="sec-tag" data-i18n="about.tag">[ · w h o · ]</span>
+    <h2 class="sec-title" data-scramble-in data-i18n-scramble="about.title">·Hello!&nbsp; I'm&nbsp; Alex&nbsp; Marlowe·</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-col">
+      <p class="lead" data-i18n="about.p1">Creative developer &amp; designer, based in Oslo, Norway. I build expressive websites, brand systems and moving images — always starting from the same question: what should this make people feel?</p>
+      <p data-i18n="about.p2">My practice sits where design systems meet storytelling: from information architecture and UX flows to typography, motion and full front-end builds. One idea, translated coherently across every medium it touches.</p>
+      <div class="avail-card" data-scroll>
+        <span class="avail-bar" aria-hidden="true"></span>
+        <p><b data-i18n="about.avail">Available for freelance — 2026</b></p>
+        <p data-i18n="about.p3">Right now I take a small number of independent projects, helping teams ship interfaces that are clear, fast and a little strange — in the good way.</p>
+      </div>
+    </div>
+    <div class="about-col">
+      <blockquote class="quote" data-scroll>
+        <p data-i18n="about.quote">"Styles come and go.<br>Good design is a language,<br>not a style."</p>
+        <cite data-i18n="about.quoteBy">— Massimo Vignelli</cite>
+      </blockquote>
+      <div class="stat-line" data-scroll>
+        <span data-i18n="about.stats">10+ years · 60+ projects · Oslo → Worldwide</span>
+      </div>
+      <p data-i18n="about.p4">Work should age like good code: readable, honest and easy to refactor. I test everything on real screens, real thumbs and real bad connections — delight that only works on a demo laptop is not delight.</p>
+      <p class="dim" data-i18n="about.p5">This entire site is hand-built with HTML · CSS · JS. Every image in the archive is generated from a seed — the whole archive is code.</p>
+    </div>
+  </div>
+
+  <div class="binary-stream" aria-hidden="true"><span id="binary-1">01010011 01101001 01100111 01101110 01100001 01101100 00100000 01101111 01110110 01100101 01110010 00100000 01101110 01101111 01101001 01110011 01100101 </span></div>
+
+  <div class="mastering" aria-hidden="true">
+    <span class="ghost-word" data-scroll>··Mastering··</span>
+    <span class="ghost-word ghost-word-2" data-scroll data-i18n="about.mastering">Your Brand's Signal</span>
+  </div>
+
+  <div class="sec-head">
+    <span class="sec-tag">[ · d n a · ]</span>
+    <h2 class="sec-title" data-scramble-in data-i18n-scramble="about.dnaTitle">·Let's find&nbsp; what sets&nbsp; your brand&nbsp; apart·</h2>
+  </div>
+  <div class="dna-grid">
+    <p data-i18n="about.dna1">Every project starts with listening. Before grids and gradients there is a conversation — what you make, who it serves, and why anyone should care. That answer becomes the signal; everything else is amplification.</p>
+    <p data-i18n="about.dna2">From there I design the language your signal speaks: identity, interface, photography, motion. Coherent on a billboard, on a phone, or inside a terminal window. <a class="inline-link" href="mailto:hello@alexmarlowe.dev" data-cursor="mail"><b><i data-i18n="about.dnaCta">Let's work together</i></b></a> — the goal is work that does not just look right, but reads unmistakably as yours.</p>
+    <p class="dim" data-i18n="about.dna3">Evidence below: the courses that sharpened the tools, followed by the work that puts them to use.</p>
+  </div>
+
+  <div class="certs" id="certs">
+    <div class="certs-head">
+      <span class="sec-tag">[ · c e r t i f i c a t e s · ]</span>
+      <span class="certs-hint" data-i18n="certs.hint">· click to enlarge ·</span>
+    </div>
+    <div class="cert-viewport" id="cert-viewport">
+      <figure class="cert-figure">
+        <img id="cert-img" src="assets/img/certs/cert-01-ux-psychology.webp" alt="Certificate — UX Psychology Masterclass" width="1500" height="1060" data-cursor="zoom">
+        <figcaption id="cert-cap">UX Psychology Masterclass — Interaction Design Foundation, 2025</figcaption>
+      </figure>
+    </div>
+    <div class="cert-controls">
+      <button class="btn-key" id="cert-prev" type="button">[·<span data-i18n="certs.prev">Prev</span>·]</button>
+      <span class="cert-counter" id="cert-counter">01 / 09</span>
+      <button class="btn-key" id="cert-next" type="button">[·<span data-i18n="certs.next">Next</span>·]</button>
+    </div>
+  </div>
+  <div class="mini-marquee" aria-hidden="true"><div class="mini-track"><span>A·M ★ LET'S WORK TOGETHER ✦ A·M ★ LET'S WORK TOGETHER ✦ A·M ★ LET'S WORK TOGETHER ✦&nbsp;</span></div></div>
+</section>
+
+<!-- ============================== WORK / ART DIRECTION ============================== -->
+<section id="work" aria-label="Selected work">
+  <div class="sec-head">
+    <span class="sec-tag">[ · p r o j e c t s · ]</span>
+    <h2 class="sec-title" data-scramble-in>[ · ART DIRECTION · ]</h2>
+  </div>
+  <div class="work-intro">
+    <p data-i18n="work.p1">A selection of commissioned and self-initiated projects, sorted by discipline. Pick a channel below — each row opens a preview inside the viewing frame.</p>
+    <a href="https://www.linkedin.com/in/alexmarlowe" target="_blank" rel="noopener" class="social-mini" aria-label="Alex Marlowe on LinkedIn">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21H9z"/></svg>
+    </a>
+  </div>
+
+  <div class="work-panel" id="work-panel">
+    <div class="panel-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="work-tabs" role="tablist" aria-label="Disciplines">
+      <button class="work-tab is-active" role="tab" aria-selected="true" data-tab="identity">[ · <span data-i18n="work.identity">Identity</span> · ]</button>
+      <button class="work-tab" role="tab" aria-selected="false" data-tab="editorial">[ · <span data-i18n="work.editorial">Editorial</span> · ]</button>
+      <button class="work-tab" role="tab" aria-selected="false" data-tab="web">[ · <span data-i18n="work.web">Web</span> · ]</button>
+    </div>
+    <div class="work-body">
+      <div class="work-table-wrap">
+        <table class="work-table">
+          <thead><tr>
+            <th data-i18n="work.thProject">Project</th><th data-i18n="work.thScope">Scope</th><th data-i18n="work.thTools">Tools</th><th data-i18n="work.thYear">Year</th>
+          </tr></thead>
+          <tbody id="work-tbody"></tbody>
+        </table>
+      </div>
+      <div class="work-stage" id="work-stage">
+        <div class="stage-idle" id="stage-idle">
+          <div class="stage-radar" aria-hidden="true"></div>
+          <p data-i18n="work.idle">[ · Select a discipline to begin · ]</p>
+          <p class="stage-hint" data-i18n="work.idleHint">click any row to render its preview</p>
+        </div>
+        <figure class="stage-figure" id="stage-figure" hidden>
+          <img id="stage-img" src="" alt="" width="1280" height="860">
+          <figcaption id="stage-cap"></figcaption>
+        </figure>
+        <div class="stage-void" id="stage-void" hidden>
+          <div class="void-hole" aria-hidden="true"></div>
+          <p class="void-title" data-i18n="work.voidTitle">THE FILE WAS EATEN BY A BLACK HOLE</p>
+          <p class="void-sub" data-i18n="work.voidSub">· SIGNAL LOST · ERR 404 ·</p>
+          <p class="void-note" data-i18n="work.voidNote">Some archives never made it back from the migration. The robot is looking.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PHOTOGRAPHY ============================== -->
+<section id="photo" aria-label="Photography">
+  <div class="sec-head">
+    <span class="sec-tag">[ · a r c h i v e · ]</span>
+    <h2 class="sec-title" data-scramble-in>[ · P H O T O G R A P H Y · ]</h2>
+  </div>
+  <p class="sec-intro" data-i18n="photo.p1">Photography keeps my composition honest. This archive travels from Nordic backyards to anywhere with a boarding pass — every frame filed with its camera metadata. <span data-i18n="photo.p1b">Open a chapter, then select a title to preview the frame.</span></p>
+
+  <div class="photo-panel">
+    <div class="panel-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="photo-cats" id="photo-cats"></div>
+    <div class="photo-view">
+      <figure class="photo-figure">
+        <img id="photo-img" src="" alt="" width="1280" height="960" hidden>
+        <div class="photo-idle" id="photo-idle"><p data-i18n="photo.idle">[ · awaiting selection · ]</p><span class="idle-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+        <figcaption id="photo-cap" hidden></figcaption>
+      </figure>
+      <dl class="photo-meta" id="photo-meta" hidden>
+        <div><dt data-i18n="photo.mLoc">LOC</dt><dd id="pm-loc">—</dd></div>
+        <div><dt data-i18n="photo.mCam">CAM</dt><dd id="pm-cam">—</dd></div>
+        <div><dt data-i18n="photo.mLens">LENS</dt><dd id="pm-lens">—</dd></div>
+        <div><dt data-i18n="photo.mYear">YEAR</dt><dd id="pm-year">—</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="polaroids" id="polaroids">
+    <div class="pol-head">
+      <span class="sec-tag">[ · p o l a r o i d s · ]</span>
+      <span class="pol-count" id="pol-counter">001 / 010</span>
+    </div>
+    <p class="pol-note" data-i18n="pol.note">A growing stack of travel polaroids pulled from the archive. When the stack reaches 100 prints, it becomes a small photobook.</p>
+    <p class="pol-hint" data-i18n="pol.hint">use the arrows [<<<] [>>>] to navigate the photos · click the one you like to full view</p>
+    <div class="pol-stage">
+      <button class="pol-arrow" id="pol-prev" type="button" aria-label="Previous polaroid">[<<<]</button>
+      <div class="pol-stack" id="pol-stack"></div>
+      <button class="pol-arrow" id="pol-next" type="button" aria-label="Next polaroid">[>>>]</button>
+    </div>
+  </div>
+
+  <div class="reveal" id="reveal">
+    <div class="reveal-head">
+      <span class="sec-tag">· REVEAL·SYS ·</span>
+      <span class="reveal-hud">· img.reveal // v0.1 ·</span>
+    </div>
+    <p class="reveal-label" data-i18n="reveal.label">[ · H O V E R&nbsp;&nbsp;T O&nbsp;&nbsp;R E V E A L&nbsp;&nbsp;T H E&nbsp;&nbsp;P H O T O · ]</p>
+    <div class="reveal-box" id="reveal-box" data-cursor="reveal">
+      <img src="assets/img/reveal-aurora.webp" alt="Hidden photograph — aurora over a silhouetted treeline" width="1280" height="960">
+      <div class="reveal-noise" aria-hidden="true"></div>
+      <div class="reveal-mask" id="reveal-mask" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ILLUSTRATION ============================== -->
+<section id="illo" aria-label="Illustration">
+  <div class="sec-head">
+    <span class="sec-tag">[ · a r c h i v e · ]</span>
+    <h2 class="sec-title" data-scramble-in data-i18n-scramble="illo.title">·Illustration Archive·</h2>
+  </div>
+  <p class="sec-intro" data-i18n="illo.p1">Personal work and commissions: digital painting, ink, cut paper and gold that never shipped as a commission. Twelve pieces — contact sheet first, holo-cube after.</p>
+
+  <div class="illo-sheet" aria-hidden="true"><div class="illo-sheet-track" id="illo-sheet"></div></div>
+  <p class="illo-sheet-hint" data-i18n="illo.click">[·click|to|enter·the|cube·]</p>
+
+  <div class="cube-zone" id="cube-zone">
+    <div class="cube-hint" id="cube-hint">
+      <p class="cube-brand">[ · H O L O - C U B E&nbsp;&nbsp;A R C H I V E · ]</p>
+      <p class="cube-sub" data-i18n="cube.sub">of twelve unruly drawings</p>
+      <div class="howto howto-cube">
+        <div class="howto-head" data-i18n="cube.howto">[ · HOW TO EXPLORE · ]</div>
+        <ol class="howto-list">
+          <li><b>·01·</b><span>SCROLL</span><small data-i18n="cube.h1">navigate illustrations</small></li>
+          <li><b>·02·</b><span data-i18n="cube.h2">click ENTER</span><small data-i18n="cube.h2b">to start the journey</small></li>
+          <li><b>·03·</b><span data-i18n="cube.h3">click -BACK/NEXT</span><small data-i18n="cube.h3b">to rotate the cube</small></li>
+          <li><b>·04·</b><span data-i18n="cube.h4">click THE IMAGE</span><small data-i18n="cube.h4b">to expanded view</small></li>
+        </ol>
+      </div>
+      <button class="btn-key btn-accent" id="cube-enter" type="button"><span data-i18n="cube.enter">Enter</span></button>
+    </div>
+
+    <div class="cube-stage" id="cube-stage" hidden>
+      <span class="cube-ghost" id="cube-ghost" aria-hidden="true">TWELVE</span>
+      <span class="cube-progress" id="cube-progress">000%</span>
+      <div class="cube-scene"><div class="cube" id="cube"></div></div>
+      <div class="cube-controls">
+        <button class="btn-key" id="cube-back" type="button"><span data-i18n="cube.back">Back</span></button>
+        <button class="btn-key" id="cube-next" type="button"><span data-i18n="cube.next">Next</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT ============================== -->
+<section id="contact" aria-label="Contact">
+  <div class="sec-head">
+    <span class="sec-tag">[ · t x · ]</span>
+    <h2 class="sec-title" data-scramble-in data-i18n-scramble="contact.title">·Let's get in touch!·</h2>
+  </div>
+  <div class="contact-grid">
+    <form class="ct-terminal" id="contact-form" novalidate>
+      <div class="ct-head">
+        <span>//NEW_MESSAGE</span>
+        <span class="ct-route" data-i18n="ct.route">OSLO ▸ WORLDWIDE</span>
+      </div>
+      <div class="ct-row">
+        <label for="ct-name">[>>>&nbsp;NAME</label>
+        <input id="ct-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="ct-row">
+        <label for="ct-email">[>>>&nbsp;EMAIL</label>
+        <input id="ct-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="ct-row">
+        <label for="ct-msg">[>>>&nbsp;MESSAGE</label>
+        <textarea id="ct-msg" name="message" rows="4" required></textarea>
+      </div>
+      <div class="ct-verify" id="ct-verify">
+        <button type="button" class="verify-btn" id="verify-btn">
+          <svg class="verify-ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="verify-ring-path" cx="22" cy="22" r="19"></circle></svg>
+          <span id="verify-label" data-i18n="ct.hold">HOLD TO VERIFY HUMAN</span>
+        </button>
+        <span class="verify-state" id="verify-state" data-i18n="ct.unverified">UNVERIFIED</span>
+      </div>
+      <div class="ct-foot">
+        <button class="btn-key btn-accent" id="ct-send" type="submit">[▸<span data-i18n="ct.send">send</span>]</button>
+        <span class="ct-status" id="ct-status">\> READY</span>
+      </div>
+      <p class="ct-demo" data-i18n="ct.demo">· form runs in demo mode — plug your endpoint into js/contact.js ·</p>
+      <div class="ct-success" id="ct-success" hidden>
+        <p class="ct-success-title">✓ <span data-i18n="ct.sent">MESSAGE SENT</span></p>
+        <p data-i18n="ct.sentSub">Thanks — I'll get back to you within 48h.</p>
+        <button class="btn-key" id="ct-again" type="button">[ · <span data-i18n="ct.again">send another</span> · ]</button>
+      </div>
+    </form>
+
+    <aside class="ct-side">
+      <a class="btn-key btn-wide" href="mailto:hello@alexmarlowe.dev" data-cursor="mail" data-scramble-hover>[ · write me directly · ]</a>
+      <div class="dna-capsule" aria-hidden="true">
+        <svg viewBox="0 0 160 340" id="dna-svg">
+          <defs>
+            <linearGradient id="dna-grad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#00e5ff"/><stop offset=".5" stop-color="#94d2bd"/><stop offset="1" stop-color="#ee9b00"/>
+            </linearGradient>
+          </defs>
+          <rect x="12" y="6" width="136" height="328" rx="68" class="dna-glass"/>
+          <line x1="80" y1="30" x2="80" y2="310" class="dna-spine"/>
+          <g id="dna-rungs"></g>
+          <path id="dna-wave-1" fill="none"/><path id="dna-wave-2" fill="none"/>
+        </svg>
+      </div>
+      <div class="award" aria-label="Sample award badge">
+        <svg viewBox="0 0 120 120" id="award-svg" aria-hidden="true">
+          <defs><path id="award-circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <circle cx="60" cy="60" r="58" class="award-ring"/>
+          <text class="award-text"><textPath href="#award-circ">✦ SAMPLE AWARD BADGE ✦ REPLACE WITH YOURS ✦ </textPath></text>
+          <text x="60" y="57" text-anchor="middle" class="award-glyph">✦</text>
+          <text x="60" y="76" text-anchor="middle" class="award-name">A·M</text>
+        </svg>
+      </div>
+      <ul class="ct-coords">
+        <li>59.9139°N · 10.7522°E</li>
+        <li>hello@alexmarlowe.dev</li>
+        <li data-i18n="ct.reply">avg. reply — 24h</li>
+        <li>UTC+2 · CET</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <button class="btn-key" id="to-top" type="button">[·<span data-i18n="foot.scroll">scroll</span>·]</button>
+    <span class="footer-here">·<span data-i18n="foot.here">here</span>·</span>
+    <p class="footer-line">© 2026 Alex Marlowe — <span data-i18n="foot.made">built by hand with HTML · CSS · JS</span></p>
+    <p class="footer-line dim">MARLOWE_OS v3.2.1 · <span data-i18n="foot.noai">every pixel generated, no photographs were harmed</span></p>
+  </footer>
+</section>
+
+</main>
+
+<!-- ============================== GLOBAL LIGHTBOX ============================== -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged view">
+  <div class="lightbox-backdrop" data-lightbox-close></div>
+  <figure class="lightbox-body">
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-cap"></figcaption>
+  </figure>
+  <button class="btn-key lightbox-close" type="button" data-lightbox-close>[·X·]</button>
+</div>
+
+<noscript><p class="noscript">This portfolio is a JavaScript-driven experience. Enable JavaScript to explore it fully.</p></noscript>
+
+<script src="js/lib/gsap.min.js"></script>
+<script src="js/lib/ScrambleTextPlugin.min.js"></script>
+<script src="js/lib/splitting.min.js"></script>
+<script src="js/lib/scroll-out.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/audio-engine.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/about.js"></script>
+<script src="js/work.js"></script>
+<script src="js/photo.js"></script>
+<script src="js/illo.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
