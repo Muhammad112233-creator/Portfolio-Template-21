@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="wave-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff"><animate attributeName="stop-color" values="#00e5ff;#ee9b00;#94d2bd;#00e5ff" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="50%" stop-color="#94d2bd"><animate attributeName="stop-color" values="#94d2bd;#00e5ff;#ca6702;#94d2bd" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#ee9b00"><animate attributeName="stop-color" values="#ee9b00;#94d2bd;#00e5ff;#ee9b00" dur="10s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <path id="wave1" d="M0,60 C150,20 300,100 450,60 C600,20 750,100 900,60 C1050,20 1200,100 1350,60 C1500,20 1650,100 1800,60 L1800,120 L0,120 Z"/>
+    <path id="wave2" d="M0,70 C150,105 300,35 450,70 C600,105 750,35 900,70 C1050,105 1200,35 1350,70 C1500,105 1650,35 1800,70 L1800,120 L0,120 Z"/>
+  </defs>
+  <rect width="900" height="120" fill="#010508"/>
+  <g opacity="0.35">
+    <use href="#wave2" fill="url(#wave-grad)">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="14s" repeatCount="indefinite"/>
+    </use>
+  </g>
+  <g opacity="0.85">
+    <use href="#wave1" fill="url(#wave-grad)">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="9s" repeatCount="indefinite"/>
+    </use>
+  </g>
+  <text x="450" y="96" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="13" letter-spacing="6" fill="#0a0f14" font-weight="bold">© 2026 ALEX MARLOWE — MARLOWE_OS · MIT LICENSE</text>
+</svg>
